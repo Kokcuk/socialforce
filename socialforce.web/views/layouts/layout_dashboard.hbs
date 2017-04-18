@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8080/static/index.css">
+</head>
+<body>
+<div class="navbar navbar-wide">
+    <div class="container-wide">
+        <div class="logo">
+            <a href="/dashboard">
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <h1>SocialForce</h1>
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">prices</a></li>
+            <li><a href="#">support</a></li>
+            <li><a href="#">billing</a></li>
+        </ul>
+        <ul class="float-right user-logged-in">
+            <li>
+                <img class="user-avatar" src="./img/avatar.jpg"/>
+                <a href="#" id="user-menu" class="dropdown-toggle">{{user.email}}</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Billing</a>
+                    <div class="dropdown-divider"></div>
+                    <form method="POST" action="/logout">
+                        <button type="submit" class="dropdown-item">Log out</button>
+                    </form>
+                    <!--<a class="dropdown-item" href="#">Log out</a>-->
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row wrapper">
+    {{{body}}}
+</div>
+<footer class="bg-grey">
+    <div class="container-wide footer footer-wide">
+        <span class="float-right">support@socialforce.io   © 2013-2017</span>
+    </div>
+</footer>
+<script src="http://localhost:8080/static/dashboard.js"></script>
+</body>
+</html>

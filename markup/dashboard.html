@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="build/index.css">
+</head>
+<body>
+<div class="navbar navbar-wide">
+    <div class="container-wide">
+        <div class="logo">
+            <a href="#">
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <h1>SocialForce</h1>
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">prices</a></li>
+            <li><a href="#">support</a></li>
+            <li><a href="#">billing</a></li>
+        </ul>
+        <ul class="float-right user-logged-in">
+            <li>
+                <img class="user-avatar" src="./img/avatar.jpg"/>
+                <a href="#" id="user-menu" class="dropdown-toggle">John Smith</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Billing</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Log out</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row wrapper">
+    <div class="col-fixed-320 left-panel">
+        <input type="text" class="form-control account-search-input" placeholder="Search accounts"></input>
+        <i class="fa fa-search account-search-input-icon"></i>
+        <ul class="left-control-bar">
+            <li class="decorated-bottom"><span>My accounts</span></li>
+            <li><a href="#" class="btn btn-primary btn-sm">Add</a></li>
+        </ul>
+        <ul class="accounts-list">
+            <li class="active-item selected">
+                <img src="./img/instagram_small.svg"/>
+                <span>kokcuk_koks</span>
+                <a href="#" class="close float-right"><i class="fa fa-close fa-lg"></i></a>
+                <a href="#" class="btn btn-danger btn-sm float-right">Stop</a>
+            </li>
+            <li class="active-item">
+                <img src="./img/twitter_small.svg"/>
+                <span>john_smith</span>
+                <a href="#" class="close float-right"><i class="fa fa-close fa-lg"></i></a>
+                <a href="#" class="btn btn-danger btn-sm float-right">Stop</a>
+            </li>
+            <li class="active-item">
+                <img src="./img/instagram_small.svg"/>
+                <span>kokcuk_koks</span>
+                <a href="#" class="close float-right"><i class="fa fa-close fa-lg"></i></a>
+                <a href="#" class="btn btn-danger btn-sm float-right">Stop</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-offset-320 dashboard-main">
+        <div class="heding-row">
+            <img class="title-img" src="./img/instagram_small.svg"/>
+            <h2>kokcuk_koks</h2>
+            <div class="badge badge-success">Active</div>
+        </div>
+        <div class="bd-example bd-example-tabs dashboard-tab" id="account-tab" role="tabpanel">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#statistics" role="tab" aria-controls="home" aria-expanded="true">Statistics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="profile" aria-expanded="false">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="about-tab" data-toggle="tab" href="#activity" role="tab" aria-controls="about" aria-expanded="false">Activity log</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div role="tabpanel" class="tab-pane fade active show" id="statistics" aria-labelledby="home-tab" aria-expanded="true">
+                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                </div>
+                <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="profile-tab" aria-expanded="false">
+                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                </div>
+                <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="profile-tab" aria-expanded="false">
+                    <p>Pidor truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer class="bg-grey">
+    <div class="container-wide footer footer-wide">
+        <span class="float-right">support@socialforce.io   © 2013-2017</span>
+    </div>
+</footer>
+<script src="./build/index.js"></script>
+</body>
+</html>

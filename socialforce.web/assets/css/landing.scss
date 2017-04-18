@@ -1,0 +1,64 @@
+.landing-content{
+  .soc-icon {
+    display: inline;
+    margin: 0 8px;
+  }
+  
+  .feature-block{
+    i{
+      font-size: 100px;
+    }
+  }
+
+  h2{
+    font-weight: 300;
+    font-size: 3.25rem;
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+  }
+
+  h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+  }
+
+  .demo-img{
+    margin-top: 30px;
+  }
+
+  .card{
+    width: 255px;
+    margin: 0 auto;
+  }
+
+  .card-header{
+    color: #fff;
+
+    i{
+      font-size: 1.9rem;
+    }
+  }
+
+  .card-footer{
+    color: white;
+  }
+}
+
+
+
+.price-cards{
+  margin-bottom: 40px;
+}
+
+.auth-header{
+  h3{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top:1.4rem;
+    margin-bottom:0.5rem;
+  }
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 15px;
+}

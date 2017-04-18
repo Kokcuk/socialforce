@@ -1,0 +1,89 @@
+$SourceProPath: "../fonts" !default;
+
+@mixin fontdef($SourceProPath, $FontType:"Regular") {
+  src:  url('#{$SourceProPath}/SourceSansPro/SourceSansPro-#{$FontType}.ttf');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  @include fontdef($SourceProPath, "ExtraLight");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  @include fontdef($SourceProPath, "ExtraLightItalic");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  @include fontdef($SourceProPath, "Light");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  @include fontdef($SourceProPath, "LightItalic");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  @include fontdef($SourceProPath, "Regular");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  @include fontdef($SourceProPath, "Italic");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  @include fontdef($SourceProPath, "Semibold");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  @include fontdef($SourceProPath, "SemiboldItalic");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  @include fontdef($SourceProPath, "Bold");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  @include fontdef($SourceProPath, "BoldItalic");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  @include fontdef($SourceProPath, "Black");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  @include fontdef($SourceProPath, "BlackItalic");
+  font-weight: 900;
+  font-style: italic;
+}

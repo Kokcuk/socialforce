@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "Linux1243",
+    "database": "socialforce",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

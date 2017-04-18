@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SocialForce - Automate your social media activity</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8080/static/index.css">
+</head>
+<body>
+<div class="navbar row">
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <h1>SocialForce</h1>
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">prices</a></li>
+            <li><a href="#">support</a></li>
+        </ul>
+        {{#if user}}
+            <a class="btn btn-success float-right" href="/signup">Logged as: {{user.email}}</a>
+        {{else}}
+            <a class="btn btn-success float-right" href="/signup">Sign up</a>
+        {{/if}}
+
+        <!--<ul class="float-right">-->
+            <!--<li><a href="#">Sign in</a></li>-->
+        <!--</ul>-->
+    </div>
+</div>
+<div class="row wrapper">
+    {{{body}}}
+</div>
+<footer class="bg-grey">
+    <div class="container footer">
+        <span>© 2013-2017</span>
+        <span class="float-right">support@socialforce.io</span>
+    </div>
+</footer>
+</body>
+</html>

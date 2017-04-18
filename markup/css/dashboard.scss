@@ -1,0 +1,172 @@
+html, body {
+  height: 100% !important;
+}
+
+.wrapper{
+  height: calc(100% - 120px);;
+  display: block;
+}
+
+.left-panel{
+  border-right: $grey-extra-light 1px solid;
+  min-height: 100%;
+}
+
+.col-fixed-320{
+  width: 320px;
+  position: relative;
+  min-height: 100%;
+  float:left;
+}
+
+.col-offset-320{
+  height: 300px;
+  margin-left: 320px;
+}
+
+.account-search-input{
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 285px;
+}
+
+.account-search-input-icon{
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  color: $gray;
+}
+
+.left-control-bar{
+  border-bottom: $grey-extra-light 1px solid;
+  width: 100%;
+  display: block;
+  height: 30px;
+  margin-top:40px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+
+  li{
+    display: inline-block;
+    height: 29px;
+    padding: 0 2px;
+
+  }
+
+  .decorated-bottom{
+    border-bottom: $color-mint 1px solid;
+    color: $color-mint;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .btn {
+    margin-left: 10px;
+  }
+}
+
+.accounts-list{
+  padding-left: 0;
+  margin-top: 15px;
+
+  .selected{
+    background: $grey-extra-light;
+  }
+
+  li{
+    list-style: none;
+    margin: 4px 0;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 35px;
+
+    .fa-lg{
+      font-size: 1.6em;
+    }
+
+    img{
+      margin-right: 15px;
+      vertical-align: middle;
+    }
+
+    span{
+      vertical-align: middle;
+    }
+
+    .btn{
+      margin: 7px 0;
+      text-decoration: none;
+      display: none;
+    }
+
+    .close{
+      color: $gray-dark;
+      margin: 3px 10px;
+      display: none;
+    }
+
+    .close:hover{
+      color: $gray-light;
+    }
+  }
+  li:hover{
+    background: $grey-extra-light;
+
+    .btn{
+      display: inline-block;
+    }
+
+    .close {
+      display: inline-block;
+    }
+  }
+
+  .active-item{
+    border-left: $color-success 7px solid;
+  }
+}
+
+.dashboard-main{
+  padding-top: 15px;
+  padding-left: 15px;
+
+  h2{
+    margin-top: 0;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 26px;
+    vertical-align:middle;
+  }
+
+  .title-img{
+    float: left;
+    margin-right: 10px;
+  }
+
+  .badge{
+    vertical-align:middle;
+    margin-top: -16px;
+    margin-left: 15px;
+  }
+}
+
+.nav-link.active{
+  //border-color: #fff #fff $color-mint !important;
+  color: $color-mint !important;
+}
+
+.nav-link{
+  color: $gray-dark;
+  text-decoration: none;
+}
+
+.dashboard-tab{
+  margin-top: 24px;
+}
+
+footer {
+  height: 65px;
+}

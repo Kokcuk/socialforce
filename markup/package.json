@@ -1,0 +1,24 @@
+{
+  "name": "markup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap-sass": "^3.3.7",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.5.1",
+    "sass-loader": "^6.0.3",
+    "webpack": "^2.3.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --progress --colors"
+  },
+  "author": "",
+  "license": "ISC"
+}
